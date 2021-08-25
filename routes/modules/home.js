@@ -5,15 +5,13 @@ const Todo = db.Todo
 const User = db.User
 
 router.get('/', (req, res) => {
-  return Todo.findAll({
-    raw: true,
-    nest: true
-  })
+  const UserId = req.user.id
+  return Todo.findAll({ raw: true, nest: true, where: { UserId } })
     .then((todos) => {
       return res.render('index', { todos: todos })
     })
     .catch((error) => {
-      return res.status(422).json(error)
+      console.error(error)
     })
 })
 
