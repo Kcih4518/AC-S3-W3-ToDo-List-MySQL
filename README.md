@@ -48,13 +48,13 @@
 1. 透過 https 取得此專案
 
 ```bash
-$ git clone https://github.com/Kcih4518/expense-tracker.git
+$ git clone https://github.com/Kcih4518/AC-S3-W3-ToDo-List-MySQL.git
 ```
 
 2. 安裝 node module
 
 ```bash
-$ cd expense-tracker.git
+$ cd AC-S3-W3-ToDo-List-MySQL
 $ npm install
 ```
 
